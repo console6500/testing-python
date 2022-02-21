@@ -7,6 +7,12 @@ def handler(event, context):
         'output': 'Hello World',
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
-    return {'statusCode': 200,
-            'body': json.dumps(data),
-            'headers': {'Content-Type': 'application/json'}}
+    theMessage = 
+    """
+    <html>
+    <body>
+    <h1>Landing Page</h1>
+    </body> 
+    </html>
+    """
+    return theMessage
